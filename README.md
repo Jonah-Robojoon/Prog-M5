@@ -14,3 +14,9 @@
 ![Animation](Gifs/3.gif)
 
 ![Scripts](Assets/Scripts/Opdr3)
+
+# --------------------------
+# Opdrach 3
+![Animation](Gifs/4.gif)
+
+![Scripts](Assets/Scripts/Opdr4)
