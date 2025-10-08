@@ -1,12 +1,12 @@
 # Opdrach 1
-hier heb ik eerst veel ballen spawned en dan iedere seconden
+hier heb ik eerst veel ballen spawned met een list die iedere bal heeft en dan iedere seconden ook en bal spawned met initiate
 ![Animation](Gifs/1.1.gif)
 
 ![Scripts](Assets/Scripts/Opdr1)
 
 # --------------------------
 # Opdrach 2
-hier heb ik een object die iedere keer waneer je je muis ik clicked dat hij op een random positie en scale spawned
+hier heb ik een object die iedere keer waneer je je muis ik clicked dat hij op een random positie en scale met Instantiate spawned
 ![Animation](Gifs/2.gif)
 
 ![Scripts](Assets/Scripts/Opdr2)
