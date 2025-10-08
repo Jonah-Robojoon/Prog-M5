@@ -24,3 +24,8 @@ hier heb ik met action events er voor gezorgd dat je coins kan oppakken en dat j
 ![Animation](Gifs/4.gif)
 
 ![Scripts](Assets/Scripts/Opdr4)
+
+# --------------------------
+# Opdrach 4
+A : shoot range is 0    ||    target tag has one extra r
+B : 
