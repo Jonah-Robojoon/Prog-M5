@@ -29,3 +29,19 @@ hier heb ik met action events er voor gezorgd dat je coins kan oppakken en dat j
 # Opdracht 5
 A : shoot range is 0    ||    target tag has one extra r
 B : 
+
+# --------------------------
+# Opdracht 6
+ X 
+
+# --------------------------
+# Opdracht 7
+ X
+
+# --------------------------
+# Opdracht 8
+hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken om 3 enemys te maken
+![Animation](Gifs/8.gif)
+
+![Scripts](Assets/Scripts/Opdr8)
+ 
