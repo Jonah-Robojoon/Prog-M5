@@ -28,7 +28,9 @@ hier heb ik met action events er voor gezorgd dat je coins kan oppakken en dat j
 # --------------------------
 # Opdracht 5
 A : shoot range is 0    ||    target tag has one extra r
+
 B : TowerDefence Opdr
+
 C : X
 
 # --------------------------
