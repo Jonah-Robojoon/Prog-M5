@@ -35,7 +35,8 @@ C : X
 
 # --------------------------
 # Opdracht 6
- X 
+hier heb ik de scripts uit elkaar gemaakt zodat het berter beveiligd is als 1 van die scripts breekt
+![Repo](https://github.com/Jonah-Robojoon/Space48Fork)
 
 # --------------------------
 # Opdracht 7
