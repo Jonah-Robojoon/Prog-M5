@@ -31,7 +31,7 @@ A : shoot range is 0    ||    target tag has one extra r
 
 B : TowerDefence Opdr
 
-C : X
+D : ![Scripts](Gifs/Breakpoint.png)
 
 # --------------------------
 # Opdracht 6
