@@ -47,5 +47,15 @@ hier heb ik de scripts uit elkaar gemaakt zodat het berter beveiligd is als 1 va
 hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken om 3 enemys te maken
 ![Animation](Gifs/8.gif)
 
+# Opdracht m6
+hier heb ik gebruik gemaakt van lists om items te maken
+![Animation](Gifs/m6.gif)
+
 ![Scripts](Assets/Scripts/Opdr8)
- 
+
+
+ # Opdracht M6
+ hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
+ ![Animation](Gifs/m6.gif)
+
+ ![Scripts](Assets/Scripts/M6)
