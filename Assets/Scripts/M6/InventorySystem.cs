@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class InventorySystem : InventoryItem
 {
-    Inventory playerInventory = new Inventory();
-    Inventory worldInventory = new Inventory();
+    private Inventory _playerInventory = new Inventory();
+    private Inventory _worldInventory = new Inventory();
 
-    float Timer = 0;
+    private float _timer = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        worldInventory.Medipacks.Add("Medipack");
-        worldInventory.Guns.Add("Gun");
-        worldInventory.Keycards.Add("Keycard");
-        worldInventory.Medipacks.Add("Medipack");
+        _worldInventory.Medipacks.Add("Medipack");
+        _worldInventory.Guns.Add("Gun");
+        _worldInventory.Keycards.Add("Keycard");
+        _worldInventory.Medipacks.Add("Medipack");
     }
 
     // Update is called once per frame
@@ -21,11 +21,11 @@ public class InventorySystem : InventoryItem
     {
         if (Input.GetKey(KeyCode.M))
         {
-            Timer = Timer + Time.deltaTime;
+            _timer = _timer + Time.deltaTime;
         }
         if (Input.GetKeyUp(KeyCode.M))
         {
-            if (Timer >= 1)
+            if (_timer >= 1)
             {
                 ItemPickup("Medipack");
             }
@@ -33,18 +33,18 @@ public class InventorySystem : InventoryItem
             {
                 ItemDrop("Medipack");
             }
-            Debug.Log("Player Medipacks: " + playerInventory.Medipacks.Count + " | Player Guns: " + playerInventory.Guns.Count + " | Player Keycards: " + playerInventory.Keycards.Count);
-            Debug.Log("World Medipacks: " + worldInventory.Medipacks.Count + " | World Guns: " + worldInventory.Guns.Count + " | World Keycards: " + worldInventory.Keycards.Count);
-            Timer = 0;
+            Debug.Log("Player Medipacks: " + _playerInventory.Medipacks.Count + " | Player Guns: " + _playerInventory.Guns.Count + " | Player Keycards: " + _playerInventory.Keycards.Count);
+            Debug.Log("World Medipacks: " + _worldInventory.Medipacks.Count + " | World Guns: " + _worldInventory.Guns.Count + " | World Keycards: " + _worldInventory.Keycards.Count);
+            _timer = 0;
         }
 
         if (Input.GetKey(KeyCode.G))
         {
-            Timer = Timer + Time.deltaTime;
+            _timer = _timer + Time.deltaTime;
         }
         if (Input.GetKeyUp(KeyCode.G))
         {
-            if (Timer >= 1)
+            if (_timer >= 1)
             {
                 ItemPickupGun("Gun");
             }
@@ -52,19 +52,19 @@ public class InventorySystem : InventoryItem
             {
                 ItemDropGun("Gun");
             }
-            Debug.Log("Player Medipacks: " + playerInventory.Medipacks.Count + " | Player Guns: " + playerInventory.Guns.Count + " | Player Keycards: " + playerInventory.Keycards.Count);
-            Debug.Log("World Medipacks: " + worldInventory.Medipacks.Count + " | World Guns: " + worldInventory.Guns.Count + " | World Keycards: " + worldInventory.Keycards.Count);
-            Timer = 0;
+            Debug.Log("Player Medipacks: " + _playerInventory.Medipacks.Count + " | Player Guns: " + _playerInventory.Guns.Count + " | Player Keycards: " + _playerInventory.Keycards.Count);
+            Debug.Log("World Medipacks: " + _worldInventory.Medipacks.Count + " | World Guns: " + _worldInventory.Guns.Count + " | World Keycards: " + _worldInventory.Keycards.Count);
+            _timer = 0;
         }
 
 
         if (Input.GetKey(KeyCode.K))
         {
-            Timer = Timer + Time.deltaTime;
+            _timer = _timer + Time.deltaTime;
         }
         if (Input.GetKeyUp(KeyCode.K))
         {
-            if (Timer >= 1)
+            if (_timer >= 1)
             {
                 ItemPickupKeycard("Keycard");
             }
@@ -72,46 +72,46 @@ public class InventorySystem : InventoryItem
             {
                 ItemDropKeycard("Keycard");
             }
-            Debug.Log("Player Medipacks: " + playerInventory.Medipacks.Count + " | Player Guns: " + playerInventory.Guns.Count + " | Player Keycards: " + playerInventory.Keycards.Count);
-            Debug.Log("World Medipacks: " + worldInventory.Medipacks.Count + " | World Guns: " + worldInventory.Guns.Count + " | World Keycards: " + worldInventory.Keycards.Count);
-            Timer = 0;
+            Debug.Log("Player Medipacks: " + _playerInventory.Medipacks.Count + " | Player Guns: " + _playerInventory.Guns.Count + " | Player Keycards: " + _playerInventory.Keycards.Count);
+            Debug.Log("World Medipacks: " + _worldInventory.Medipacks.Count + " | World Guns: " + _worldInventory.Guns.Count + " | World Keycards: " + _worldInventory.Keycards.Count);
+            _timer = 0;
         }
 
     }
 
     private void ItemPickup(string item)
     {
-        worldInventory.Medipacks.Remove(item);
-        playerInventory.Medipacks.Add(item);
+        _worldInventory.Medipacks.Remove(item);
+        _playerInventory.Medipacks.Add(item);
     }
 
     private void ItemPickupGun(string item)
     {
-        worldInventory.Guns.Remove(item);
-        playerInventory.Guns.Add(item);
+        _worldInventory.Guns.Remove(item);
+        _playerInventory.Guns.Add(item);
     }
 
     private void ItemPickupKeycard(string item)
     {
-        worldInventory.Keycards.Remove(item);
-        playerInventory.Keycards.Add(item);
+        _worldInventory.Keycards.Remove(item);
+        _playerInventory.Keycards.Add(item);
     }
 
     private void ItemDrop(string item)
     {
-        playerInventory.Medipacks.Remove(item);
-        worldInventory.Medipacks.Add(item);
+        _playerInventory.Medipacks.Remove(item);
+        _worldInventory.Medipacks.Add(item);
     }
 
     private void ItemDropGun(string item)
     {
-        worldInventory.Guns.Add(item);
-        playerInventory.Guns.Remove(item);
+        _worldInventory.Guns.Add(item);
+        _playerInventory.Guns.Remove(item);
     }
 
     private void ItemDropKeycard(string item)
     {
-        worldInventory.Keycards.Add(item);
-        playerInventory.Keycards.Remove(item);
+        _worldInventory.Keycards.Add(item);
+        _playerInventory.Keycards.Remove(item);
     }
 }
