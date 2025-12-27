@@ -49,3 +49,20 @@ hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken 
 
 ![Scripts](Assets/Scripts/Opdr8)
  
+ ```mermaid
+ classDiagram
+
+ class Enemy {
+		+int health
+		+float speed
+		+void Move()
+		+void TakeDamage(int damage)
+	}
+
+class Goblin {
+		+void SpecialGoblinAbility()
+	}
+
+Enemy <|-- Goblin
+
+```
