@@ -55,6 +55,14 @@ hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
 ![Animation](Gifs/m6.gif)
 
 ![Scripts](Assets/Scripts/M6)
+
+
+# --------------------------
+# Opdracht 3
+hier heb ik met heaps en stacks gewerkt om een inventory te maken (ScriptableObjects, Classes, structs)
+![Animation](Gifs/6.3.gif)
+
+![Scripts](Assets/Scripts/M6/Opdracht%203)
  
  ```mermaid
  classDiagram
