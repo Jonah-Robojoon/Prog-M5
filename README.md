@@ -47,7 +47,14 @@ hier heb ik de scripts uit elkaar gemaakt zodat het berter beveiligd is als 1 va
 hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken om 3 enemys te maken
 ![Animation](Gifs/8.gif)
 
-![Scripts](Assets/Scripts/Opdr8)
+
+# M6
+# --------------------------
+# Opdracht 1
+hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
+![Animation](Gifs/m6.gif)
+
+![Scripts](Assets/Scripts/M6)
  
  ```mermaid
  classDiagram
