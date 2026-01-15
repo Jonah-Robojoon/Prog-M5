@@ -69,6 +69,13 @@ hier heb ik met heaps en stacks gewerkt om een inventory te maken (ScriptableObj
 ![Scripts](Assets/Scripts/M6/Opdracht%203)
 
 # --------------------------
+# Les 4
+hier heb ik met delegate gewerkt om een function te activeren via een andere script
+![Animation](Gifs/6.4.gif)
+
+![Scripts](Assets/Scripts/M6/Les4)
+
+# --------------------------
 # Les 7
 hier heb ik met early returns gewerkt om het meer leesbaar te maken
 
