@@ -50,15 +50,19 @@ hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken 
 
 # M6
 # --------------------------
-# Opdracht 1
+# Les 1
 hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
 ![Animation](Gifs/m6.gif)
 
 ![Scripts](Assets/Scripts/M6)
 
+# --------------------------
+# Les 2
+Mermaid
+
 
 # --------------------------
-# Opdracht 3
+# Les 3
 hier heb ik met heaps en stacks gewerkt om een inventory te maken (ScriptableObjects, Classes, structs)
 ![Animation](Gifs/6.3.gif)
 
