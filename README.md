@@ -51,7 +51,7 @@ hier heb ik met parent classes gewerkt om meerdere scripts met elkaar te linken 
 # M6
 # --------------------------
 # Les 1
-hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
+hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt. dit heb ik gemaakt met heele harde focus op code convensies. zoals private altijd beginnen met: _
 ![Animation](Gifs/m6.gif)
 
 ![Scripts](Assets/Scripts/M6)
@@ -59,7 +59,23 @@ hier heb ik een list gemaakt van items en dingen uit die list gehaalt en gestopt
 # --------------------------
 # Les 2
 Mermaid
+ ```mermaid
+ classDiagram
 
+ class Enemy {
+		+int health
+		+float speed
+		+void Move()
+		+void TakeDamage(int damage)
+	}
+
+class Goblin {
+		+void SpecialGoblinAbility()
+	}
+
+Enemy <|-- Goblin
+
+```
 
 # --------------------------
 # Les 3
@@ -70,14 +86,28 @@ hier heb ik met heaps en stacks gewerkt om een inventory te maken (ScriptableObj
 
 # --------------------------
 # Les 4
-hier heb ik met delegate gewerkt om een function te activeren via een andere script
+hier heb ik met delegates en action events gewerkt om een function te activeren via een andere script.
 ![Animation](Gifs/6.4.gif)
 
 ![Scripts](Assets/Scripts/M6/Les4)
 
 # --------------------------
+# Les 5
+Hier heb ik geleerd over Abstraction. Dit heb ik gedaan door een class te verplichten om bepaalde functies te gebruiken. dit zorgt ervoor dat mensen niet functions vergeten die wel belangerijk zijn om te werken
+![Animation](Gifs/6.5.gif)
+
+![Scripts](Assets/Scripts/M6/Les5)
+
+# --------------------------
+# Les 6
+hier heb ik gewerkt met Polymophism. Dit is gebruikt met het overriden van functions die all in classes bestaan. hierdoor is er altijd een bestaandde function, maar laat het toe als mensen wat extra dingen willen toe voegen.
+![Animation](Gifs/6.6.gif)
+
+![Scripts](Assets/Scripts/M7/Les5)
+
+# --------------------------
 # Les 7
-hier heb ik met early returns gewerkt om het meer leesbaar te maken
+hier heb ik met early returns gewerkt om scripts meer leesbaar te maken. dit heb ik gedaan door return en continue te gebruiken
 
 ```csharp
 public bool IsPlayerReadyToAttack(Player player)
@@ -101,23 +131,5 @@ public bool IsPlayerReadyToAttack(Player player)
 
         return true;
     }
-
-```
- 
- ```mermaid
- classDiagram
-
- class Enemy {
-		+int health
-		+float speed
-		+void Move()
-		+void TakeDamage(int damage)
-	}
-
-class Goblin {
-		+void SpecialGoblinAbility()
-	}
-
-Enemy <|-- Goblin
 
 ```
